@@ -20,6 +20,7 @@ var submitButton = document.getElementById("submitButton");
 	}
 }, {decodeEntities: true}); */
 
+//http://krasimirtsonev.com/blog/article/Convert-HTML-string-to-DOM-element
 var str2DOMElement = function(html) {
     var frame = document.createElement('iframe');
     frame.style.display = 'none';
@@ -32,11 +33,13 @@ var str2DOMElement = function(html) {
     return el;
 }
 
+var tags;
 
 submitButton.addEventListener('click', function (e) {
-	var input = document.getElementById("originalText");
+	var input = document.getElementById("originalText");	
 	
 var handler = new Tautologistics.NodeHtmlParser.DefaultHandler(function (error, dom) {
+	tags = dom;
 	console.log(dom);
 	if (error){
 		
@@ -63,8 +66,14 @@ var handler = new Tautologistics.NodeHtmlParser.DefaultHandler(function (error, 
 	parser.parseComplete(document.body.innerHTML);
 	//alert(JSON.stringify(handler.dom, null, 2));	
 	
-	
+	console.log(tags);
 	//parser.write(input.Text);
 	//parser.end();
+	
+	for (var tag in tags) {
+	console.log(tag);
+	console.log(tags[tag].type);
+}
 });
+
 
