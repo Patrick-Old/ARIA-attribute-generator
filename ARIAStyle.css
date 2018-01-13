@@ -1,0 +1,13 @@
+#originalText, #ariaText {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#pageTitle {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#submitButton {
+    margin-bottom: 30px;
+}
