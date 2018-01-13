@@ -1,0 +1,23 @@
+[
+    "aria-atomic",
+    "aria-busy", //(state)
+    "aria-controls",
+    "aria-current", //(state)
+    "aria-describedby",
+    "aria-details",
+    "aria-disabled", //(state)
+    "aria-dropeffect",
+    "aria-errormessage",
+    "aria-flowto",
+    "aria-grabbed", //(state)
+    "aria-haspopup",
+    "aria-hidden", //(state)
+    "aria-invalid", //(state)
+    "aria-keyshortcuts",
+    "aria-label",
+    "aria-labelledby",
+    "aria-live",
+    "aria-owns",
+    "aria-relevant",
+    "aria-roledescription"
+"]
