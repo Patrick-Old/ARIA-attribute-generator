@@ -1,13 +1,53 @@
 #originalText, #ariaText {
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.textAreaHeader {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#pageTop {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 40px;
 }
 
 #pageTitle {
-    text-align: center;
-    margin-top: 10px;
+    background-image: url("blind-header.jpg");
+    height: 430px;
+    padding: 30px;
+    padding-left: 100px;
+    padding-top: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 65px;
 }
 
 #submitButton {
     margin-bottom: 30px;
+}
+
+#textAreaDesc {
+    margin: 15px;
+}
+
+body {
+    background: white;
+}
+
+textarea {
+    background-color: rgb(77, 21, 21);
+}
+
+#learn, #aboutUs {
+    display: inline-block;
+    float: right;
+    float: top;
+}
+
+.mdl-navigation__link {
+    font-size: 18px;
 }
