@@ -1,3 +1,4 @@
+ARIA Properties for any HTML Element
 [
     "aria-atomic",
     "aria-busy", //(state)
@@ -20,4 +21,12 @@
     "aria-owns",
     "aria-relevant",
     "aria-roledescription"
-"]
+]
+
+ARIA Roles
+
+[
+	"",
+	"",
+	"treeitem"
+]
