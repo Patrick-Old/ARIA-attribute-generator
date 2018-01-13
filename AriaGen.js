@@ -59,20 +59,31 @@ var handler = new Tautologistics.NodeHtmlParser.DefaultHandler(function (error, 
 	var el = inputParser.parseFromString(markup, "text/xml");
 	
 	console.log(el); */
-	var el = str2DOMElement(input.value);
-	console.log(el);
+	if(input.value.includes("<body>")) {
+		
+		var inputClean = input.value.split("<body>")[1].split("</body>")[0];
+	} else {
+		var inputClean = input.value;
+	}
 	
-	parser.parseComplete(el.innerHTML);
+	console.log(inputClean);
+	var el = str2DOMElement("<div>" + inputClean + "</div>");
+	console.log(el);
+	var he = document.getElementById("hiddenEval");
+	he.appendChild(el)
 	parser.parseComplete(document.body.innerHTML);
+	console.log(he.innerHTML);
+	parser.parseComplete(he.innerHTML);
+
 	//alert(JSON.stringify(handler.dom, null, 2));	
 	
-	console.log(tags);
+	console.log(tags[1].children);
 	//parser.write(input.Text);
 	//parser.end();
 	
-	for (var tag in tags) {
+	for (var tag in tags[1].children) {
 	console.log(tag);
-	console.log(tags[tag].type);
+	console.log(tags[1].children[tag].type);
 }
 });
 
