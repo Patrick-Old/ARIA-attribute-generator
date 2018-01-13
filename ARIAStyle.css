@@ -51,3 +51,7 @@ textarea {
 .mdl-navigation__link {
     font-size: 18px;
 }
+
+.form-control {
+	overflow: auto;
+}

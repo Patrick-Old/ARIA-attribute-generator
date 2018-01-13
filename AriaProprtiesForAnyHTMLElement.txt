@@ -1,0 +1,115 @@
+ARIA Properties for any HTML Element
+[
+    "aria-atomic",
+    "aria-busy", //(state)
+    "aria-controls",
+    "aria-current", //(state)
+    "aria-describedby",
+    "aria-details",
+    "aria-disabled", //(state)
+    "aria-dropeffect",
+    "aria-errormessage",
+    "aria-flowto",
+    "aria-grabbed", //(state)
+    "aria-haspopup",
+    "aria-hidden", //(state)
+    "aria-invalid", //(state)
+    "aria-keyshortcuts",
+    "aria-label",
+    "aria-labelledby",
+    "aria-live",
+    "aria-owns",
+    "aria-relevant",
+    "aria-roledescription"
+]
+
+ARIA Roles
+
+[
+	"alert",
+	"alertdialog",
+	"application",
+	"article",
+	"banner",
+	"button",
+	"checkbox",
+	"cell",
+	"columnheader",
+	"combobox",
+	"complementary",
+	"contentinfo",
+	"definition",
+	"dialog",
+	"directory",
+	"document",
+	"feed",
+	"figure",
+	"form",
+	"grid",
+	"gridcell",
+	"group",
+	"heading",
+	"img",
+	"link",
+	"list",
+	"listbox",
+	"listitem",
+	"log",
+	"main",
+	"marquee",
+	"math",
+	"menu",
+	"menubar",
+	"menuitem",
+	"menuitemcheckbox",
+	"menuitemradio",
+	"navigation",
+	"note",
+	"option",
+	"presentation",
+	"progressbar",
+	"radio",
+	"radiogroup",
+	"region",
+	"row",
+	"rowgroup",
+	"rowheader",
+	"scrollbar",
+	"search",
+	"searchbox",
+	"separator",
+	"slider",
+	"spinbutton",
+	"status",
+	"switch",
+	"tab",
+	"table",
+	"tablist",
+	"tabpanel",
+	"term",
+	"textbox",
+	"timer",
+	"toolbar",
+	"tooltip",
+	"tree",
+	"treegrid",
+	"treeitem"
+]
+
+Corresponding ARIA roles with HTML tags
+
+[
+	//ARIA Landmarks
+	"header":"banner",
+	"nav": "navigation",
+	"main": "main",
+	"footer": "contentinfo",
+	"aside": "complementary",
+	//role=search is also a landmark, but no corresponding HTML tag exists
+
+	"form": "form",
+	"section": "region",
+	"article": "article",
+	"a": "link",
+	"": ""
+]
