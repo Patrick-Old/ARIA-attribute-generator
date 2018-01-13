@@ -11,3 +11,7 @@
 #submitButton {
     margin-bottom: 30px;
 }
+
+.form-control {
+	overflow: auto;
+}
