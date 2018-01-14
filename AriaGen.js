@@ -36,6 +36,8 @@ var str2DOMElement = function(html) {
 var tags;
 var output;
 submitButton.addEventListener('click', function (e) {
+	tags = "";
+	output = "";
 	var input = document.getElementById("originalText");	
 	
 	var handler = new Tautologistics.NodeHtmlParser
@@ -133,10 +135,11 @@ function findAttr(children) {
 			if (Object.keys(roleDict).includes(children[tag].name)) {
 				if (children[tag].attribs && children[tag].attribs.role && children[tag].attribs.role == roleDict[children[tag].name]) {
 					
-				} else if (roleDict[children[tag].name]){
+				} else if (Object.keys(roleDict).includes(children[tag].name)){
 					//write tags out
 					//console.log("needs: " + roleDict[children[tag].name]);
 					children[tag].attribs =  {"role": roleDict[children[tag].name]};
+					console.log
 				}
 			}
 			//Recurse over children
@@ -161,7 +164,7 @@ function write(children) {
 				output = output + "</" + closer + ">\n";
 			}
 			
-			if (children[tag].attribs) {
+			if (children[tag].attribs && Object.keys(roleDict).includes(children[tag].name)) {
 				output = output + "<" + children[tag].data + " role=" + "\"" + children[tag].attribs.role + "\"";
 			}
 			else {
