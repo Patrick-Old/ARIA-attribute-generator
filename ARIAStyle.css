@@ -64,6 +64,10 @@
     margin-bottom: 41px;
 }
 
+#typeOfIcon {
+    font-weight: 500;
+}
+
 #team {
     text-align: center;
     font-size: 40px;
