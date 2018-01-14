@@ -38,29 +38,15 @@ submitButton.addEventListener('click', function (e) {
 	output = "";
 	var input = document.getElementById("originalText");	
 	
-	var handler = new Tautologistics.NodeHtmlParser
-	.DefaultHandler(function (error, dom) {
+	var handler = new Tautologistics.NodeHtmlParser.DefaultHandler(function (error, dom) {
 		tags = "";
 		tags = dom;
 		console.log(dom);
-		if (error){
-			
-		}
-			//[...do something for errors...]
-		else {
-			
-		}
-			//[...parsing done, do something...]
 	});
 	var parser = new Tautologistics.NodeHtmlParser.Parser(handler);
 	console.log(document.body.innerHTML);
+	console.log(input);
 	
-	//console.log(jQuery.parseHTML(input.Text));
-	/* var markup = input.Text;
-	var inputParser = new DOMParser();
-	var el = inputParser.parseFromString(markup, "text/xml");
-	
-	console.log(el); */
 	if(input.value.includes("<body>")) {
 		
 		var inputClean = input.value.split("<body>")[1].split("</body>")[0];
