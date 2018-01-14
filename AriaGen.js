@@ -97,7 +97,7 @@ submitButton.addEventListener('click', function (e) {
 	console.log(found);
 	write(found);
 	console.log("Write Children finished");
-	output = output.substring(9);
+	//output = output.substring(9);
 	
 	if(input.value.includes("<body>")) {
 		
@@ -198,14 +198,15 @@ function write(children) {
 }
 
 function chooseAttr(child, role) {
-	var attrBox = document.getElementById("");
-	var attrSugg = "At " + child.raw + "with role = " + role + " there should be these attributes with these possible values: \n";
+	var attrBox = document.getElementById("errorDesc");
+	var attrSugg = "At " + child.raw + " role = " + role + " there should be these attributes with these possible values: \n";
 	for (var attr in attributes[role]) {
 		for (var prop in values[attr]) {
+			console.log(attr + " " + prop);
 			attrSugg = attrSugg + attr + "=" + prop + "\n";
 		}
 	} 
-	attrBox.innerHTML = attrSugg;
+	attrBox.innerHTML = attrBox.innerHTML + attrSugg;
 }
 
 var attributes = {
