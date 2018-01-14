@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="ARIAStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto|Open+Sans" rel="stylesheet">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <title>ARIA Tag Generator</title>
+</head>
+<body>
+    <!-- Uses a transparent header that draws on top of the layout's background -->
+    <style>
+        .demo-layout-transparent {
+            background: url('../assets/demos/transparent.jpg') center / cover;
+        }
+        .demo-layout-transparent .mdl-layout__header,
+        .demo-layout-transparent .mdl-layout__drawer-button {
+        /* This background is dark, so we set text to white. Use 87% black instead if
+            your background is light. */
+        color: rgb(255, 255, 255);
+        }
+    </style>
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--transparent">
+        <div class="mdl-layout__header-row">
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="ARIAgenerator.html">GENERATOR</a>
+                <a class="mdl-navigation__link" href="learn.html">LEARN</a>
+                <a class="mdl-navigation__link" href="aboutUs.html">ABOUT US</a>
+            </nav>
+        </div>
+    </header>
+    </div>
+    <div id="learnPageTitle">Learn</div>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col col-md-6">
+                <h3 class="topicHeaders">What is ARIA?</h3>
+                <p id="whatIsAriaDesc">
+                    ARIA stands for Accessible Rich Internet Applications. ARIA makes advanced
+                    web applications accessible and usable for people with disabilities.
+                </p>
+            </div>
+            <div class="col col-md-6">
+                <h3 class="topicHeaders">Why use ARIA?</h3>
+                <p class="smallLearnInfo">
+                    By incorporating ARIA into HTML code, your web application will be accessible to people with disabilities such as visual impairment that prevent them from reading what is displayed on a user interface.
+                </p>
+            </div>
+            <div class="col col-md-6">
+                <h3 class="topicHeaders">How does this work?</h3>
+                <p class="smallLearnInfo">
+                    A person who is visually impaired uses software programs called screen readers. 
+                    <br>
+                    ARIA attributes in a program signal to a screen reader what text and functionality displayed on a screen needs to be communicated to the visually impaired user. 
+                    <br>
+                    The screen reader reads aloud the text and functionality to the user.
+                </p>
+            </div>
+            <div class="col col-md-6">
+                <h3 class="topicHeaders">What does our ARIA generator do for you?</h3>
+                <p class="smallLearnInfo">
+                    After inputting your HTML code into our input box, we will parse through your code adding ARIA attributes where necessary, producing 
+                    an output with all required ARIA attributes that will allow people with disabilities to access your web application.
+                </p>
+            </div>
+            <div class="col col-md-6" id="lastDesc">
+                <h3 class="topicHeaders">Recommended browser and screen reader pairings</h3>
+                <p class="smallLearnInfo">
+                    These pairings will produce the highest quality output from a screen reader (source: webaim.org).
+                    <li>Chrome or Internet Explorer + Jaws</li>
+                    <li>Firefox + NVDA</li> 
+                    <li>Safari + Voiceover</li>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+		<script src="jquery-3.2.1.js" type="text/javascript"></script>
+		<script src="node_modules/htmlparser/lib/htmlparser.js" type="text/javascript"></script>
+		<script src="AriaGen.js" type="text/javascript"></script>
+</body>
+</html>
