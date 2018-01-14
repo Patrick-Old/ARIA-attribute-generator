@@ -118,7 +118,7 @@ var roleDict = {"header":"banner",
 	"article": "article",
 	"a": "link"};
 	
-var selfClose = ["img", "area", "base"];
+var selfClose = ["img", "area", "base", "input", "br", "col", "command", "embed", "hr", "keygen", "link", "menuitem", "meta", "param", "source", "track", "wbr"];
 
 function findAttr(children) {
 	for (var tag in children) {
