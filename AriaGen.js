@@ -118,7 +118,7 @@ var roleDict = {"header":"banner",
 	"article": "article",
 	"a": "link"};
 	
-var selfClose = ["img", "area", "base"];
+var selfClose = ["img", "area", "base", "input"];
 
 function findAttr(children) {
 	for (var tag in children) {
@@ -131,7 +131,7 @@ function findAttr(children) {
 			if (Object.keys(roleDict).includes(children[tag].name)) {
 				if (children[tag].attribs && children[tag].attribs.role && children[tag].attribs.role == roleDict[children[tag].name]) {
 					
-				} else{
+				} else if (roleDict[children[tag].name]){
 					//write tags out
 					//console.log("needs: " + roleDict[children[tag].name]);
 					children[tag].attribs =  {"role": roleDict[children[tag].name]};
