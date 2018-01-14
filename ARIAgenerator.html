@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="demo-layout-transparent mdl-layout mdl-js-layout">
-    <header class="mdl-layout__header mdl-layout__header--transparent">
+    <header class="mdl-layout__header mdl-layout__header--transparent" role="banner">
         <div class="mdl-layout__header-row">
             <!-- Add spacer, to align navigation to the right -->
             <div class="mdl-layout-spacer"></div>
@@ -28,31 +28,36 @@
         </div>
     </header>
     </div>
+    <main>
     <div id="pageTitle">ARIA Feature <br /> <br /> <br /> Generator</div>
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="col col-md-6">
                 <div class="form-group">
-                    <div class="textAreaHeader">
+                    <label for="input">
+                    <div class="textAreaHeader" aria-describedby="inputDesc">
                         <u>INPUT</u> 
                     </div>
-                    <div class="textAreaDesc">
-                        Your original HTML input, ready to have ARIA features added to it.
+                    <div id="inputDesc" class="textAreaDesc">
+                        Your original HTML input, ready to have ARIA attributes added to it.
                     </div>
-                    <textarea class="form-control" rows="25" id="originalText" placeholder="Your HTML Here..."></textarea>
+                </label>
+                    <textarea required id="input" class="form-control" rows="25" id="originalText" placeholder="Your HTML Here..." aria-required="true" aria-multiline="true"></textarea>
 
                 </div>
                 <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
             </div>
             <div class="col col-md-6">
                 <div class="form-group">
-                    <div class="textAreaHeader">
+                    <label for="output">
+                    <div class="textAreaHeader" aria-describedby="outputDesc">
                         <u>OUTPUT</u> 
                     </div>
                     <div class="textAreaDesc">
                         Your HTML with ARIA features added.
                     </div>
-                    <textarea class="form-control" rows="25" id="ariaText"></textarea>
+                </label>
+                    <textarea id="output" class="form-control" rows="25" id="ariaText"></textarea>
                 </div>
             </div>
             <div class="col col-md-12" id="errorDesc">
@@ -60,7 +65,7 @@
             </div>
         </div>
     </div>
-	
+	</main>
 	<div id="hiddenEval">
 	</div>
 		<script src="jquery-3.2.1.js" type="text/javascript"></script>
