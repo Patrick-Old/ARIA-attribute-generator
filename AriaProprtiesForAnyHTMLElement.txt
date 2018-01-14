@@ -89,6 +89,58 @@ ARIA Properties associated with each role;
 	"treeitem": [[any], "aria-level", "aria-expanded", "aria-selected", "aria-checked", "aria-posinset", "aria-setsize"]
 ]
 
+ARIA Property Values
+[
+    "aria-activedescendant": ["true", "false"],
+	"aria-atomic": ["true", "false"],
+	"aria-autocomplete": ["inline", "list", "both", "none"],
+	"aria-busy": ["true", "false"],
+	"aria-checked": ["true", "false", "mixed", "undefined"],
+	"aria-colcount": integer,
+	"aria-colindex": integer,
+	"aria-colspan": integer,
+	"aria-controls": referenced element ID,
+	"aria-current": ["page", "step", "location", "true", "false", "date", "time"],
+	"aria-describedby": referenced element ID,
+	"aria-details": referenced element ID,
+	"aria-disabled": ["true", "false"],
+	"aria-dropeffect":["copy", "execute", "link", "move", "none", "popup"],
+	"aria-errormessage": referenced element ID
+	"aria-expanded": ["true", "false", "undefined"],
+	"aria-flowto": referenced element ID
+	"aria-grabbed": ["true", "false", "undefined"],
+	"aria-haspopup": ["true", "false", "menu", "listbox", "grid", "dialog", "tree"],
+	"aria-hidden": ["true", "false", "undefined"],
+	"aria-invalid":["true", "false", "grammar", "spelling"],
+	"aria-keyshortcuts": String of keyboard shortcuts,
+	"aria-label": String to label element,
+	"aria-labelledby": referenced element ID,
+	"aria-level":  integer,
+	"aria-live":["assertive", "polite", "off"],
+	"aria-modal": ["true", "false"],
+	"aria-multiline": ["true", "false"],
+	"aria-multiselectable": ["true", "false"],
+	"aria-orientation": ["horizontal", "vertical", "undefined"],
+	"aria-owns": referenced element ID,
+	"aria-placeholder": placeholder string,
+	"aria-posinset": integer,
+	"aria-pressed": ["true", "false", "mixed", "undefined"],
+	"aria-readonly": ["true", "false"],
+	"aria-relevant": ["additions", "additions text", "all", "text", "removals"],
+	"aria-required": ["true", "false"],
+	"aria-roledescription": String description,
+	"aria-rowcount": integer,
+	"aria-rowindex": integer,
+	"aria-rowspan": integer,
+	"aria-selected": ["true", "false", "undefined"],
+	"aria-setsize": integer,
+	"aria-sort": ["ascending", "descending", "other", "none"],
+	"aria-valuemax": integer,
+	"aria-valuemin": integer,
+	"aria-valuenow": integer,
+	"aria-valuetext": Readable version of aria-valuenow
+]
+
 ARIA Roles
 
 [
