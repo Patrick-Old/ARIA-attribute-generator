@@ -2,8 +2,6 @@
 
 var submitButton = document.getElementById("submitButton");
 
-
-
 /* var parser = new htmlparser.Parser({
 	onopentag: function(name, attribs){
 		if(name === "script" && attribs.type === "text/javascript"){
