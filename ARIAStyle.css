@@ -19,6 +19,7 @@
 
 #pageTitle {
     background-image: url("blind-header.jpg");
+    background-attachment: fixed;
     height: 430px;
     padding: 30px;
     padding-left: 100px;
@@ -108,4 +109,12 @@ textarea {
 
 .form-control {
 	overflow: auto;
+}
+
+.demo-layout-transparent {
+            background: url('../assets/demos/transparent.jpg') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header, .demo-layout-transparent .mdl-layout__drawer-button {
+/* This background is dark, so we set text to white. Use 87% black instead if your background is light. */
+    color: rgb(255, 255, 255);
 }
