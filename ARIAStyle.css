@@ -6,6 +6,7 @@
 .textAreaHeader {
     font-weight: 600;
     font-size: 16px;
+    font-family: 'Open Sans', sans-serif; 
     margin-top: 25px;
     color: rgb(132, 175, 53);
 }
@@ -55,8 +56,30 @@
     margin-bottom: -10px;
 }
 
+#line {
+    border-color: rgb(132, 175, 53);
+}
+
+#errorDesc {
+    margin-bottom: 41px;
+}
+
+#typeOfIcon {
+    font-weight: 500;
+}
+
+#team {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(132, 175, 53);
+    margin-bottom: 50px;
+
+}
+
 .names {
     text-align: center;
+    font-size: 16px; 
+    color: rgb(132, 175, 53);
 }
 
 .aboutItemDescs {
@@ -84,6 +107,9 @@
     margin: 15px;
 }
 
+.textAreaDesc {
+    font-family: 'Open Sans', sans-serif; 
+}
 body {
     background: white;
     font-family: 'Lato', sans-serif;
@@ -110,7 +136,10 @@ textarea {
 .form-control {
 	overflow: auto;
 }
-
+.btn-primary {
+    background-color: rgb(132, 175, 53)!important;
+    border-color: white; 
+}
 .demo-layout-transparent {
             background: url('../assets/demos/transparent.jpg') center / cover;
 }
